@@ -323,6 +323,18 @@
   .h-100 {
     height: calc(var(--spacing) * 100);
   }
+  .h-105 {
+    height: calc(var(--spacing) * 105);
+  }
+  .h-107 {
+    height: calc(var(--spacing) * 107);
+  }
+  .h-110 {
+    height: calc(var(--spacing) * 110);
+  }
+  .h-120 {
+    height: calc(var(--spacing) * 120);
+  }
   .h-150 {
     height: calc(var(--spacing) * 150);
   }
