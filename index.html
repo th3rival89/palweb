@@ -7,15 +7,27 @@
     <link rel="icon" href="ressources/palweb.png" type="image/x-icon" />
     <link rel="stylesheet" href="./styles/output.css">
 </head>
-<body>
+<body class="bg-teal-50">
 
     <!-- MENU -->
 
     <nav>
-        <div class="center-flex w-full h-25 bg-teal-500 relative z-5">
-            <div class="flex justify-between pr-5 bg-slate-100 w-250 h-19 rounded-lg relative mt-25 shadow-xl z-40">
+        <div class="center-flex w-full h-25 bg-gradient-to-r from-teal-400 to-teal-600 relative z-5">
+            <div class="absolute">
+                <div class="flex mb-10">
+                    <div class="flex w-110">
+                        <span class="text-white font-bold pr-3">Follow Us:</span>
+                        <a href="https://www.facebook.com"><img src="./ressources/facebook.svg" alt="icone facebook" class="size-6 fill-sky-950 mr-4"></a>
+                        <a href="https://www.linkedin.com"><img src="./ressources/linkedin.svg" alt="icone facebook" class="size-6 fill-sky-950 mr-4"></a>
+                        <a href="https://www.instagram.com"><img src="./ressources/instagram.svg" alt="icone facebook" class="size-6 fill-sky-950"></a>
+                    </div>
+                    <div class="border w-120">
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-between pr-5 bg-slate-100 w-250 h-26 rounded-lg relative mt-30 shadow-xl z-40">
                 <div>
-                    <img src="./ressources/palweb.png" alt="" class="w-29 rounded-l-lg">
+                    <img src="./ressources/palweb.png" alt="" class="ml-5 w-30 rounded-l-lg">
                 </div>
                 <div class="flex">
                     <div class="flex gap-10 items-center font-semibold pr-10">
@@ -24,11 +36,11 @@
                         <a href="#" class="uppercase hover:text-teal-500">Réalisation</a>
                         <a href="#" class="uppercase hover:text-teal-500">Contact</a>
                     </div>
-                    <div class="py-5 pr-10">
+                    <div class="py-8 pr-8">
                         <a href="#"><img src="./ressources/loupe.svg" alt="" class="size-8"></a>
                     </div>
-                    <div class="py-4 ">
-                        <a href="#" class="flex bg-teal-500 px-8 py-2 rounded-md text-lg text-white">Une offre ⭢</a>
+                    <div class="py-7 ">
+                        <a href="#" class="flex bg-teal-500 px-8 py-2 rounded-md text-lg">Une offre ⭢</a>
                     </div>
                 </div>
             </div>
@@ -49,7 +61,7 @@
                             <p class="uppercase text-white mt-10">Se rendre visible sur internet de nos jours est important</p>
                             <p class="uppercase text-white">Avec un bon référencement c'est encore mieux</p>
                             <div class="flex mt-10 gap-4">
-                                <a href="#" class="bg-teal-500 px-8 py-2 rounded-md text-lg text-white">Les projets</a>
+                                <a href="#" class="bg-teal-500 px-8 py-2 rounded-md text-lg">Les projets</a>
                                 <a href="#" class="bg-white px-6 py-2 rounded-md text-lg">Me contacter</a>
                             </div>
                         </div>
@@ -64,41 +76,9 @@
     </nav>
     <main>
 
-        <!-- SERVICES -->
-
-        <section class="mt-[125px] mb-[200px] center-flex gap-7">
-            <div class="flex items-center w-96 h-50 shadow-2xl shadow-gray-400 bg-teal-500 rounded-2xl hover:-translate-y-3 transition-transform duration-300">
-                <div>
-                    <img src="ressources/unique.svg" alt="" class="size-20 rounded-full ml-10 bg-white px-2">
-                </div>
-                <div class="pl-10 w-60">
-                    <h3 class="uppercase text-white font-semibold">Un projet unique</h3>
-                    <p class="pt-2 text-white text-sm">Nous parlons ensemble de votre projet et je le construirai sur mesure. Toutes idées est bonne à développer</p>
-                </div>
-            </div>
-            <div class="flex items-center w-96 h-50 shadow-2xl shadow-gray-400 bg-teal-500 rounded-2xl hover:-translate-y-3 transition-transform duration-300">
-                <div>
-                    <img src="ressources/stat.svg" alt="" class="size-20 rounded-full ml-10 bg-white px-2">
-                </div>
-                <div class="pl-10 w-60">
-                    <h3 class="uppercase text-white font-semibold">référencement seo</h3>
-                    <p class="pt-2 text-white text-sm">Un bon référencement est important pour être visible sur les moteurs de recherche. Un site sans SEO, estcomme une marque sans publicité !</p>
-                </div>
-            </div>
-            <div class="flex items-center w-96 h-50 shadow-2xl shadow-gray-400 bg-teal-500 rounded-2xl hover:-translate-y-3 transition-transform duration-300">
-                <div>
-                    <img src="ressources/mail.svg" alt="" class="size-20 rounded-full ml-10 bg-white px-2">
-                </div>
-                <div class="pl-10 w-60">
-                    <h3 class="uppercase text-white font-semibold">email pro</h3>
-                    <p class="pt-2 text-white text-sm">Si ce n'est pas encore fait, nous choisirons ensemble votre nom de domaine, vous recevrez avec une ou plusieurs adresses mail professionelle.</p>
-                </div>
-            </div>
-        </section>
-
         <!-- ABOUT US -->
 
-        <section class="mb-[125px]">
+        <section class="mt-[125px]">
             <div class="flex justify-center">
                 <div class="flex">
                     <div class="flex flex-col justify-between -mr-35">
@@ -122,30 +102,62 @@
                         <li>Pour toute commande, vous aurez une maquette avant le lancement du site.</li>
                     </ul>
                     <div class="mt-10">
-                        <a href="#" class=" bg-teal-500 px-8 py-2 rounded-md text-lg text-white">Demandez un devis ⭢</a>
+                        <a href="#" class=" bg-teal-500 px-8 py-2 rounded-md text-lg">Demandez un devis ⭢</a>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+
+        <section class="mt-[200px] center-flex gap-7">
+            <div class="flex items-center w-96 h-60 shadow-2xl shadow-gray-400 bg-gradient-to-r from-teal-400 to-teal-600 rounded-2xl hover:-translate-y-3 transition-transform duration-300">
+                <div>
+                    <img src="ressources/unique.svg" alt="" class="size-20 rounded-full ml-10 bg-white px-2">
+                </div>
+                <div class="pl-10 w-60">
+                    <h3 class="uppercase font-semibold">Un projet unique</h3>
+                    <p class="pt-2 text-sm">Nous parlons ensemble de votre projet et je le construirai sur mesure. Toutes idées est bonne à développer</p>
+                </div>
+            </div>
+            <div class="flex items-center w-96 h-60 shadow-2xl shadow-gray-400 bg-gradient-to-r from-teal-400 to-teal-600 rounded-2xl hover:-translate-y-3 transition-transform duration-300">
+                <div>
+                    <img src="ressources/stat.svg" alt="" class="size-20 rounded-full ml-10 bg-white px-2">
+                </div>
+                <div class="pl-10 w-60">
+                    <h3 class="uppercase font-semibold">référencement seo</h3>
+                    <p class="pt-2 text-sm">Un bon référencement est important pour être visible sur les moteurs de recherche. Un site sans SEO, estcomme une marque sans publicité !</p>
+                </div>
+            </div>
+            <div class="flex items-center w-96 h-60 shadow-2xl shadow-gray-400 bg-gradient-to-r from-teal-400 to-teal-600 rounded-2xl hover:-translate-y-3 transition-transform duration-300">
+                <div>
+                    <img src="ressources/mail.svg" alt="" class="size-20 rounded-full ml-10 bg-white px-2">
+                </div>
+                <div class="pl-10 w-60">
+                    <h3 class="uppercase font-semibold">email pro</h3>
+                    <p class="pt-2 text-sm">Si ce n'est pas encore fait, nous choisirons ensemble votre nom de domaine, vous recevrez avec une ou plusieurs adresses mail professionelle.</p>
                 </div>
             </div>
         </section>
 
         <!-- GALERIE -->
 
-        <section class="flex flex-col items-center mt-[200px] mb-[125px]">
+        <section class="mt-[200px] flex flex-col items-center mb-[125px]">
             <div class="w-[1300px]">
                 <div class="ml-20">
                     <h3 class="uppercase text-teal-500 font-semibold">Nos realisations</h3> 
-                    <h2 class="w-110 uppercase text-3xl font-bold">Chaque réalisation est <span class="text-teal-500">développée</span> en fonction de vos envies </h2>           
+                    <h2 class="w-150 uppercase text-3xl font-bold">Chaque réalisation est <span class="text-teal-500">développée</span> en fonction de vos envies </h2>           
                 </div>
             </div>
-            <div class="flex w-[1300px] mt-20">
+            <div class="flex w-[1300px] mt-10">
                 <div class="flex items-center">
                     <a href="#" class="btn-arrow">⭠</a>
                 </div>
                 <div class="ml-10 w-150">
                     <a href="https://www.lesquales.be"><img src="./ressources/lessquales.png" alt="" class="rounded-l-2xl shadow-2xl"></a>
                 </div>
-                <div class="flex flex-col justify-center w-150 h-101 bg-gray-200 rounded-r-2xl shadow-2xl">
-                    <h4 class="mt-5 ml-10 text-2xl font-semibold">Les Squales</h4>
+                <div class="flex flex-col justify-center w-150 h-101 bg-white rounded-r-2xl shadow-2xl">
+                    <h4 class="ml-10 text-2xl font-semibold">Les Squales</h4>
                     <p class="w-125 ml-10 mt-5">
                         Les Squales est une ASBL, école de plongée avec des moniteurs extraordinaire capable de vous apprendre tout les rudiments et les beautés de la plongée. 
                         Ce site est ma première expérience de développement. J'ai adoré réaliser ce travail avec de si belles couleurs et de si belles images ! Je fais moi même partie 
@@ -157,6 +169,16 @@
                 </div>
                 <div class="flex items-center">
                     <a href="#" class="ml-10 btn-arrow">⭢</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="mt-50 flex justify-center">
+                <div class="flex justify-between bg-white w-[1000px] h-[600px] rounded-2xl shadow-2xl mb-20">
+                    <div class="w-full bg-teal-200 rounded-l-2xl">
+
+                    </div>    
+                    <div class="w-full "></div>    
                 </div>
             </div>
         </section>
