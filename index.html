@@ -14,15 +14,19 @@
     <nav>
         <div class="center-flex w-full h-25 bg-gradient-to-r from-teal-400 to-teal-600 relative z-5">
             <div class="absolute">
-                <div class="flex mb-10">
-                    <div class="flex w-110">
-                        <span class="text-white font-bold pr-3">Follow Us:</span>
+                <div class="flex justify-center mb-10 w-full">
+                    <div class="flex w-110 pl-10">
+                        <span class="text-white font-bold pr-6 uppercase">Follow Us:</span>
                         <a href="https://www.facebook.com"><img src="./ressources/facebook.svg" alt="icone facebook" class="size-6 fill-sky-950 mr-4"></a>
                         <a href="https://www.linkedin.com"><img src="./ressources/linkedin.svg" alt="icone facebook" class="size-6 fill-sky-950 mr-4"></a>
                         <a href="https://www.instagram.com"><img src="./ressources/instagram.svg" alt="icone facebook" class="size-6 fill-sky-950"></a>
                     </div>
-                    <div class="border w-120">
-                    </div>
+                    <a href="mailto:info@palweb.be">
+                        <div class="flex justify-end w-120 pr-10 font-bold text-white uppercase">
+                            <img src="./ressources/mail-contact.svg" class="size-7" alt="">
+                            <p class="normal-case pl-2">info@palweb.be</p>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="flex justify-between pr-5 bg-slate-100 w-250 h-26 rounded-lg relative mt-30 shadow-xl z-40">
@@ -40,7 +44,7 @@
                         <a href="#"><img src="./ressources/loupe.svg" alt="" class="size-8"></a>
                     </div>
                     <div class="py-7 ">
-                        <a href="#" class="flex bg-teal-500 px-8 text-white font-semibold py-2 rounded-md text-lg">Une offre ⭢</a>
+                        <a href="#" class="flex bg-teal-500 px-8 text-white font-semibold py-2 rounded-md text-lg transition-transform duration-300 transform hover:translate-x-2">Une offre ⭢</a>
                     </div>
                 </div>
             </div>
@@ -74,7 +78,21 @@
             </div>
         </section>
     </nav>
+
     <main>
+
+        <!-- PROMO -->
+
+        <section class="mt-15 flex justify-center">
+            <a href="https://comeup.com/fr/service/481043/creer-votre-site-vitrine-responsive-one-page-pages-en-html-css-tailwind" target="_blank">
+                <div class="flex border-1 border-gray-200 bg-white w-200 h-20 rounded-lg shadow-2xl transition-transform duration-300 ease-in-out transform hover:scale-105">
+                    <img src="./ressources/comeup.jpg" alt="" class="w-20 rounded-l">
+                    <div class="flex ml-18 items-center">
+                        <h4 class="text-2xl font-semibold"><span class="font-bold">Promo ComeUp</span> - Votre premier site Onepage à 150€</h4>
+                    </div>
+                </div>
+            </a>
+        </section>
 
         <!-- A PROPOS DE -->
 
@@ -101,7 +119,7 @@
                         <li>Un projet n'est jamais fini, je serais disponible pour vos questions et modification.</li>
                         <li>Pour toute commande, vous aurez une maquette avant le lancement du site.</li>
                     </ul>
-                    <div class="mt-10">
+                    <div class="mt-10 transition-transform duration-300 transform hover:translate-x-2">
                         <a href="#" class=" bg-teal-500 text-white font-semibold px-8 py-3 rounded-md text-lg">Demandez un devis ⭢</a>
                     </div>
                 </div>
@@ -110,7 +128,7 @@
 
         <!-- SERVICES -->
 
-        <section class="mt-50">
+        <section class="mt-40">
             <div class="flex flex-col items-center">
                 <div class="w-300">
                     <h3 class="uppercase text-teal-500 font-semibold">services</h3>
@@ -184,11 +202,8 @@
         <!-- GALERIE -->
 
         <section class="mt-50 mb-20">
-            <div class="flex justify-center gap-20">
-                <div>
-                    <h3 class="uppercase text-teal-500 font-semibold">Realisations</h3>
-                    <h2 class="w-110 uppercase text-3xl font-bold mb-20">Chaque réalisation est <span class="text-teal-500">développée</span> en fonction de vos envies</h2>
-                </div>
+            <div class="flex justify-center gap-30">
+
   
                 <div class="w-178"> 
                     <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer">
@@ -196,30 +211,41 @@
                         <div class="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-400 ease-in-out">
                             <h3 class="text-2xl font-bold mb-2 text-center">Les Grosses Pierres</h3>
                             <p class="text-center text-gray-200 text-sm mb-4">Un gite de charme au milieu des ardennes Belge</p>
-                            <a href="https://www.lesgrossespierres.be" class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Voir le projet</a>
+                            <a href="https://www.lesgrossespierres.be" target="_blank" class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Voir le projet</a>
                         </div>
                     </div>
                 </div>
+
+                <div>
+                    <h3 class="uppercase text-teal-500 font-semibold">Realisations</h3>
+                    <h2 class="w-110 uppercase text-3xl font-bold">Chaque réalisation est <span class="text-teal-500">développée</span> en fonction de vos envies</h2>
+                    <p class="mt-8 mb-8 font-semibold w-120">Chaque site créé sont fait à votre image ! Vous choisissez vos couleurs, votre typographie, vos images et je mixe le tout, pour vous faire le site que vous désirez.
+                                                        La communication sur le projet est important. Si le site ne vous plait pas, on peut l'adapter ! Tout est modulable, c'est pour ça que je préfère codé que d'utiliser
+                                                        des créateurs de site web comme Wordpress ou autre. Vous voulez en découvrir plus ? </p>
+                    <div class="transition-transform duration-300 transform hover:translate-x-2">
+                        <a href="#" class="mt-5 bg-teal-500 text-white font-semibold px-8 py-3 rounded-md text-lg">Contactez moi ⭢</a>
+                    </div>
+                </div>                
             </div>   
 
-            <section class="mt-15 container mx-auto px-4 py-12">
+            <section class="w-340 mt-10 container mx-auto px-4 py-12">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                    <!-- <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer">
-                        <img src="./ressources/lesgrossespierres.jpg" alt="Description du projet 1" class="w-full h-64 object-cover block transform group-hover:scale-110 transition-transform duration-400 ease-in-out">
+                    <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer">
+                        <img src="./ressources/palweb.jpg" alt="Description du projet 1" class="w-full h-64 object-cover block transform group-hover:scale-110 transition-transform duration-400 ease-in-out">
                         <div class="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-400 ease-in-out">
-                            <h3 class="text-2xl font-bold mb-2 text-center">Les Grosses Pierres</h3>
-                            <p class="text-center text-gray-200 text-sm mb-4">Un gite de charme au milieu des ardennes Belge</p>
-                            <a href="https://www.lesgrossespierres.be" class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Voir le projet</a>
+                            <h3 class="text-2xl font-bold mb-2 text-center">Landing Page - PalWeb</h3>
+                            <p class="text-center text-gray-200 text-sm mb-4">Landing page de site en construction pour mon site</p>
+                            <a href="https://www.palweb.be" target="_blank" class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Voir le projet</a>
                         </div>
-                    </div> -->
+                    </div>
 
                     <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer">
                         <img src="./ressources/bornservices.jpg" alt="Description du projet 2" class="w-full h-64 object-cover block transform group-hover:scale-110 transition-transform duration-400 ease-in-out">
                         <div class="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-400 ease-in-out">
                             <h3 class="text-2xl font-bold mb-2 text-center">Born Services</h3>
                             <p class="text-center text-gray-200 text-sm mb-4">Entrepreneur de travaux de rénovation à Liège</p>
-                            <a href="lien-vers-page-projet-2.html" class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Voir le projet</a>
+                            <a href="lien-vers-page-projet-2.html" target="_blank" class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Voir le projet</a>
                         </div>
                     </div>
 
@@ -228,7 +254,7 @@
                         <div class="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-400 ease-in-out">
                             <h3 class="text-2xl font-bold mb-2 text-center">Les Squales</h3>
                             <p class="text-center text-gray-200 text-sm mb-4">Ecole et club de plongée à Verviers</p>
-                            <a href="lien-vers-page-projet-n.html" class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Voir le projet</a>
+                            <a href="lien-vers-page-projet-n.html" target="_blank" class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Voir le projet</a>
                         </div>
                     </div>
                 </div>
@@ -237,36 +263,7 @@
 
         <!-- CONTACT -->
 
-        <!-- <section class="mt-[200px] flex flex-col items-center mb-[125px]">
-            <div class="w-[1300px]">
-                <div class="ml-20">
-                    <h3 class="uppercase text-teal-500 font-semibold">Nos realisations</h3> 
-                    <h2 class="w-150 uppercase text-3xl font-bold">Chaque réalisation est <span class="text-teal-500">développée</span> en fonction de vos envies </h2>           
-                </div>
-            </div>
-            <div class="flex w-[1300px] mt-10">
-                <div class="flex items-center">
-                    <a href="#" class="btn-arrow">⭠</a>
-                </div>
-                <div class="ml-10 w-150">
-                    <a href="https://www.lesquales.be"><img src="./ressources/lessquales.png" alt="" class="rounded-l-2xl shadow-2xl"></a>
-                </div>
-                <div class="flex flex-col justify-center w-150 h-101 bg-white rounded-r-2xl shadow-2xl">
-                    <h4 class="ml-10 text-2xl font-semibold">Les Squales</h4>
-                    <p class="w-125 ml-10 mt-5">
-                        Les Squales est une ASBL, école de plongée avec des moniteurs extraordinaire capable de vous apprendre tout les rudiments et les beautés de la plongée. 
-                        Ce site est ma première expérience de développement. J'ai adoré réaliser ce travail avec de si belles couleurs et de si belles images ! Je fais moi même partie 
-                        de ce club, n'hésitez pas à venir le découvrir en prenant contact avec les Squales.
-                    </p>
-                    <div class="ml-10 mt-5">
-                        <a href="https://www.lesquales.be" class="text-lg underline text-teal-500 font-semibold">https://www.lesquales.be</a>
-                    </div>
-                </div>
-                <div class="flex items-center">
-                    <a href="#" class="ml-10 btn-arrow">⭢</a>
-                </div>
-            </div>
-        </section> -->
+
 
     </main>
     <script src="./script.js"></script>
