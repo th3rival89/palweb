@@ -11,24 +11,8 @@
     
     <!-- MENU -->
 
-    <nav id="section-accueil">
+    <!-- <nav id="section-accueil">
         <div class="center-flex w-full h-25 bg-teal-600 relative z-5">
-            <!-- <div class="absolute">
-                <div class="flex justify-center mb-10 w-full">
-                    <div class="flex w-110 pl-10">
-                        <span class="text-white font-bold pr-6 uppercase">Follow Us:</span>
-                        <a href="https://www.facebook.com"><img src="./ressources/facebook.svg" alt="icone facebook" class="size-6 fill-sky-950 mr-4"></a>
-                        <a href="https://www.linkedin.com"><img src="./ressources/linkedin.svg" alt="icone facebook" class="size-6 fill-sky-950 mr-4"></a>
-                        <a href="https://www.instagram.com"><img src="./ressources/instagram.svg" alt="icone facebook" class="size-6 fill-sky-950"></a>
-                    </div>
-                    <a href="mailto:info@palweb.be">
-                        <div class="flex justify-end w-120 pr-10 font-bold text-white uppercase">
-                            <img src="./ressources/mail-contact.svg" class="size-7" alt="">
-                            <p class="normal-case pl-2">info@palweb.be</p>
-                        </div>
-                    </a>
-                </div>
-            </div> -->
             <div class="flex justify-between pr-5 bg-slate-100 w-250 h-22 rounded-lg relative mt-20 shadow-xl z-40">
                 <div class="flex justify-center items-center">
                     <img src="./ressources/palweb.png" alt="" class="ml-5 w-22 rounded-l-lg">
@@ -40,23 +24,41 @@
                         <a href="#section-realisation" class="uppercase hover:text-teal-500">Réalisation</a>
                         <a href="#section-contact" class="uppercase hover:text-teal-500">Contact</a>
                     </div>
-                    <!-- <div class="py-8 pr-8">
-                        <a href="#"><img src="./ressources/loupe.svg" alt="" class="size-8"></a>
-                    </div> -->
+
                     <div class="py-6 ">
                         <a href="#section-contact" class="flex bg-teal-600 px-8 text-white font-semibold py-2 rounded-md text-lg transition-transform duration-300 transform hover:translate-x-2">Une offre ⭢</a>
                     </div>
                 </div>
             </div>
-        </div>
-
+        </div> -->
+    
         <!-- HERO -->
-
+        <nav id="section-accueil"></nav>
         <section class="z-10">
-            <div class="relative bg-cover bg-center w-full h-210 shadow-2xl">
-                <div class="center-flex bg-[url(../ressources/hero.webp)] w-full h-full bg-cover bg-center z-30">
-                    <div class="flex justify-between items-center w-full h-150 z-10">
-                        <div class="center-flex ml-25"> </div>
+            <div class="relative bg-cover bg-center w-full h-240 shadow-2xl">
+                <div class="flex flex-col bg-[url(../ressources/hero.webp)] w-full h-full bg-cover bg-center z-30">
+                    <div class="flex flex-col  items-center w-full h-22 mt-10 z-10">
+                      
+                        <div class="flex justify-between pr-5 bg-slate-100 w-250 h-22 rounded-lg shadow-xl z-40">
+                            <div class="flex justify-center items-center">
+                                <img src="./ressources/palweb.png" alt="" class="ml-5 w-22 rounded-l-lg">
+                            </div>
+                            <div class="flex">
+                                <div class="flex gap-10 items-center font-semibold pr-10">
+                                    <a href="#section-accueil" class="uppercase hover:text-teal-500">Accueil</a>
+                                    <a href="#section-services" class="uppercase hover:text-teal-500">Services</a>
+                                    <a href="#section-realisation" class="uppercase hover:text-teal-500">Réalisation</a>
+                                    <a href="#section-contact" class="uppercase hover:text-teal-500">Contact</a>
+                                </div>
+
+                                <div class="py-6 ">
+                                    <a href="#section-contact" class="flex bg-teal-600 px-8 text-white font-semibold py-2 rounded-md text-lg transition-transform duration-300 transform hover:translate-x-2">Une offre ⭢</a>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="flex flex-col justify-center items-center w-full h-full z-10">            
+                        <div class="flex ml-25"> </div>
                         <div>
                             <h2 class="uppercase text-left text-teal-500 text-xl font-semibold">Un petit plus pour vous</h2>
                             <h1 class="uppercase text-left text-white text-5xl font-bold w-190 mt-10">Création de site internet, pour votre <span class="text-teal-500">visibilité</span></h1>
@@ -73,11 +75,13 @@
                         </div>
                     </div>                    
                     <div class="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent"></div>
+                    
+                    <!-- <div class="flex  ml-20">
+                        <a href="#section-accueil"><img src="./ressources/arrow-up.svg" alt="" class="fixed border-2 size-12 rounded-full bg-black border-white z-99 hover:-translate-y-3 transition-transform duration-350"></a>                             
+                    </div>                      -->
                 </div>
 
-                <div class="-mt-50 ml-20">
-                    <a href="#section-accueil"><img src="./ressources/arrow-up.svg" alt="" class="fixed border-2 size-12 rounded-full bg-black border-white z-99 hover:-translate-y-3 transition-transform duration-350"></a>                             
-                </div> 
+
 
             </div>
         </section>
@@ -213,10 +217,10 @@
                 <div class="w-178"> 
                     <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer">
                         <img src="./ressources/lesgrossespierres.jpg" alt="Description du projet 1" class="w-full h-100 object-cover block transform group-hover:scale-110 transition-transform duration-400 ease-in-out">
-                        <div class="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-400 ease-in-out">
-                            <h3 class="text-2xl font-bold mb-2 text-center">Les Grosses Pierres</h3>
-                            <p class="text-center text-gray-200 text-sm mb-4">Un gite de charme au milieu des ardennes Belge</p>
-                            <a href="https://www.lesgrossespierres.be" target="_blank" class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Voir le projet</a>
+                        <div class="absolute inset-0 bg-(url[../ressources/lesgrossespierres.jpg]) backdrop-blur-lg bg-opacity-70 flex flex-col justify-center items-center p-6 text-black opacity-0 group-hover:opacity-100 transition-opacity duration-400 ease-in-out">
+                            <h3 class="text-4xl font-bold mb-2 text-center">Les Grosses Pierres</h3>
+                            <p class="text-center text-black text-lg mb-4">Un gite de charme au milieu des ardennes Belge</p>
+                            <a href="https://www.lesgrossespierres.be" target="_blank" class="inline-block bg-teal-500 hover:bg-teal-600 text-white text-lg font-semibold py-3 px-5 rounded-md transition-colors duration-200">Voir le projet</a>
                         </div>
                     </div>
                 </div>
@@ -238,27 +242,27 @@
 
                     <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer">
                         <img src="./ressources/palweb.jpg" alt="Description du projet 1" class="w-full h-64 object-cover block transform group-hover:scale-110 transition-transform duration-400 ease-in-out">
-                        <div class="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-400 ease-in-out">
+                        <div class="absolute inset-0 bg-(url[../ressources/palweb.jpg]) backdrop-blur-lg bg-opacity-70 flex flex-col justify-center items-center p-6 text-black opacity-0 group-hover:opacity-100 transition-opacity duration-400 ease-in-out">
                             <h3 class="text-2xl font-bold mb-2 text-center">Landing Page - PalWeb</h3>
-                            <p class="text-center text-gray-200 text-sm mb-4">Landing page de site en construction pour mon site</p>
+                            <p class="text-center text-black mb-4">Landing page de site en construction pour mon site</p>
                             <a href="https://www.palweb.be" target="_blank" class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Voir le projet</a>
                         </div>
                     </div>
 
                     <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer">
                         <img src="./ressources/bornservices.jpg" alt="Description du projet 2" class="w-full h-64 object-cover block transform group-hover:scale-110 transition-transform duration-400 ease-in-out">
-                        <div class="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-400 ease-in-out">
+                        <div class="absolute inset-0 bg-(url[../ressources/bornservices.jpg]) backdrop-blur-lg bg-opacity-70 flex flex-col justify-center items-center p-6 text-black opacity-0 group-hover:opacity-100 transition-opacity duration-400 ease-in-out">
                             <h3 class="text-2xl font-bold mb-2 text-center">Born Services</h3>
-                            <p class="text-center text-gray-200 text-sm mb-4">Entrepreneur de travaux de rénovation à Liège</p>
+                            <p class="text-center text-black mb-4">Entrepreneur de travaux de rénovation à Liège</p>
                             <a href="https://www.bornservices.be" target="_blank" class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Voir le projet</a>
                         </div>
                     </div>
 
                     <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer">
                         <img src="./ressources/lessquales.jpg" alt="Description du projet N" class="w-full h-64 object-cover block transform group-hover:scale-110 transition-transform duration-400 ease-in-out">
-                        <div class="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-400 ease-in-out">
+                        <div class="absolute inset-0 bg-(url[../ressources/lessquales.jpg]) backdrop-blur-lg bg-opacity-70 flex flex-col justify-center items-center p-6 text-black opacity-0 group-hover:opacity-100 transition-opacity duration-400 ease-in-out">
                             <h3 class="text-2xl font-bold mb-2 text-center">Les Squales</h3>
-                            <p class="text-center text-gray-200 text-sm mb-4">Ecole et club de plongée à Verviers</p>
+                            <p class="text-center text-black mb-4">Ecole et club de plongée à Verviers</p>
                             <a href="https://www.lesquales.be" target="_blank" class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Voir le projet</a>
                         </div>
                     </div>
@@ -389,5 +393,11 @@
 
         </section>
     </footer>
+
+    <div class="fixed bottom-10 right-10 z-50">
+        <a href="#section-accueil">
+            <img src="./ressources/arrow-up.svg" alt="Retour en haut" class="border-2 size-12 rounded-full bg-black border-white hover:-translate-y-3 transition-transform duration-350">
+        </a>
+    </div>
 </body>
 </html>
