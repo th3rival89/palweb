@@ -13,3 +13,7 @@
 html {
   scroll-behavior: smooth;
 }
+
+.group:hover .arrow {
+  transform: translateX(5px);
+}
