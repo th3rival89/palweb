@@ -11,7 +11,7 @@
 
     <!-- MENU -->
 
-    <nav>
+    <nav id="section-accueil">
         <div class="center-flex w-full h-25 bg-gradient-to-r from-teal-400 to-teal-600 relative z-5">
             <div class="absolute">
                 <div class="flex justify-center mb-10 w-full">
@@ -35,16 +35,16 @@
                 </div>
                 <div class="flex">
                     <div class="flex gap-10 items-center font-semibold pr-10">
-                        <a href="#" class="uppercase hover:text-teal-500">Accueil</a>
-                        <a href="#" class="uppercase hover:text-teal-500">Services</a>
-                        <a href="#" class="uppercase hover:text-teal-500">Réalisation</a>
-                        <a href="#" class="uppercase hover:text-teal-500">Contact</a>
+                        <a href="#section-accueil" class="uppercase hover:text-teal-500">Accueil</a>
+                        <a href="#section-services" class="uppercase hover:text-teal-500">Services</a>
+                        <a href="#section-realisation" class="uppercase hover:text-teal-500">Réalisation</a>
+                        <a href="#section-contact" class="uppercase hover:text-teal-500">Contact</a>
                     </div>
                     <div class="py-8 pr-8">
                         <a href="#"><img src="./ressources/loupe.svg" alt="" class="size-8"></a>
                     </div>
                     <div class="py-7 ">
-                        <a href="#" class="flex bg-teal-600 px-8 text-white font-semibold py-2 rounded-md text-lg transition-transform duration-300 transform hover:translate-x-2">Une offre ⭢</a>
+                        <a href="#section-contact" class="flex bg-teal-600 px-8 text-white font-semibold py-2 rounded-md text-lg transition-transform duration-300 transform hover:translate-x-2">Une offre ⭢</a>
                     </div>
                 </div>
             </div>
@@ -56,30 +56,33 @@
             <div class="relative bg-cover bg-center w-full h-210 shadow-2xl">
                 <div class="center-flex bg-[url(../ressources/hero.webp)] w-full h-full bg-cover bg-center z-30">
                     <div class="flex justify-between items-center w-full h-150 z-10">
-                        <div class="center-flex ml-25"> 
-                            <!-- w-10 h-10 rounded-full text-3xl text-teal-500 bg-white hover:-translate-x-1 transition-transform duration-250"> -->
-                            <!-- <a href="#">⭠</a> -->
-                        </div>
+                        <div class="center-flex ml-25"> </div>
                         <div>
                             <h2 class="uppercase text-left text-teal-500 text-xl font-semibold">Un petit plus pour vous</h2>
                             <h1 class="uppercase text-left text-white text-5xl font-bold w-190 mt-10">Création de site internet, pour votre <span class="text-teal-500">visibilité</span></h1>
                             <p class="uppercase text-white mt-10">Se rendre visible sur internet de nos jours est important</p>
                             <p class="uppercase text-white">Avec un bon référencement c'est encore mieux</p>
                             <div class="flex mt-10 gap-4">
-                                <a href="#" class="bg-teal-600 px-8 py-2 rounded-md text-lg text-white font-semibold">Les projets</a>
-                                <a href="#" class="bg-white px-6 py-2 rounded-md text-lg font-semibold">Me contacter</a>
+                                <a href="#section-realisation" class="bg-teal-600 px-8 py-2 rounded-md text-lg text-white font-semibold">Les projets</a>
+                                <a href="#section-contact" class="bg-white px-6 py-2 rounded-md text-lg font-semibold">Me contacter</a>
                             </div>
-                        </div>
-                        <div class="center-flex mr-25"> 
+                        </div>                    
+                        <div class="mr-25"> 
                             <!-- w-10 h-10 rounded-full text-3xl text-teal-500 bg-white hover:translate-x-1 transition-transform duration-250">
-                            <a href="#">⭢</a> -->
+                            <a href="#">⭢</a> -->   
                         </div>
-                    </div>
+                    </div>                    
                     <div class="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent"></div>
                 </div>
+
+                <div class="-mt-130 ml-20">
+                    <a href="#section-accueil"><img src="./ressources/arrow-up.svg" alt="" class="fixed border-2 size-12 rounded-full bg-black border-white z-99 hover:-translate-y-3 transition-transform duration-350"></a>                             
+                </div> 
+
             </div>
         </section>
     </nav>
+
 
     <main>
 
@@ -122,7 +125,7 @@
                         <li>Pour toute commande, vous aurez une maquette avant le lancement du site.</li>
                     </ul>
                     <div class="mt-10 transition-transform duration-300 transform hover:translate-x-2">
-                        <a href="#" class=" bg-teal-600 text-white font-semibold px-8 py-3 rounded-md text-lg">Demandez un devis ⭢</a>
+                        <a href="#section-contact" class=" bg-teal-600 text-white font-semibold px-8 py-3 rounded-md text-lg">Demandez un devis ⭢</a>
                     </div>
                 </div>
             </div>
@@ -130,7 +133,7 @@
 
         <!-- SERVICES -->
 
-        <section class="mt-40">
+        <section id="section-services" class="mt-40">
             <div class="flex flex-col items-center">
                 <div class="w-300">
                     <h3 class="uppercase text-teal-500 font-semibold">services</h3>
@@ -203,7 +206,7 @@
 
         <!-- GALERIE -->
 
-        <section class="mt-50">
+        <section id="section-realisation" class="mt-50">
             <div class="flex justify-center gap-30">
 
   
@@ -225,7 +228,7 @@
                                                         La communication sur le projet est important. Si le site ne vous plait pas, on peut l'adapter ! Tout est modulable, c'est pour ça que je préfère codé que d'utiliser
                                                         des créateurs de site web comme Wordpress ou autre. Vous voulez en découvrir plus ? </p>
                     <div class="transition-transform duration-300 transform hover:translate-x-2">
-                        <a href="#" class="mt-5 bg-teal-600 text-white font-semibold px-8 py-3 rounded-md text-lg">Contactez moi ⭢</a>
+                        <a href="#section-contact" class="mt-5 bg-teal-600 text-white font-semibold px-8 py-3 rounded-md text-lg">Contactez moi ⭢</a>
                     </div>
                 </div>                
             </div>   
@@ -265,46 +268,102 @@
 
         <!-- CONTACT -->
 
-        <section class="flex justify-center mt-50">
-            <div>
+        <section id="section-contact" class="relative mt-30 h-150 ">
 
-            </div>            
-            <div>
-                <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col mt-5 rounded-lg w-120 space-y-4 p-6 border-gray-400 max-[850px]:w-80 max-[850px]:mt-5 max-[850px]:p-0 max-[850px]:items-center max-[1215px]:w-80 max-[1215px]:mt-1" >
-                    <input type="hidden" name="apikey" value="7e1a5f8b-2460-40f6-af08-452d100b04a5">
-                    <input type="hidden" name="redirect" value="https://www.palweb.be/remerciement.html">
-                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-
-                    <div class>
-                        <label for="nom" class="font-[Urbanist] text-gray-700 text-lg font-semibold mb-2 mr-8 max-[850px]:text-base">Votre nom :</label>
-                        <input type="text" id="nom" name="nom" placeholder="Gérard Lime" required 
-                            class="w-full mt-3 appearance-none border-b border-gray-400 py-2 px-3 font-light leading-tight focus:outline-none focus:shadow-outline max-[850px]:w-80 max-[850px]:mt-2">
+            <div class="absolute inset-0 bg-[url(../ressources/hero-contact.jpg)] w-full h-150 bg-cover bg-center z-1"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-[rgb(3_3_3_/_0.9)] to-[rgba(56,56,61,0.8)] z-10">
+                <div class="flex justify-center items-center h-full">
+                    <div class="-mt-60">
+                        <p class="text-teal-500 text-xl uppercase font-semibold">une question ?</p>
+                        <h2 class="mt-10 text-5xl text-white font-bold uppercase">Contactez-moi</h2>
+                        <p class="mt-10 uppercase text-white"><span class="mr-1">➜</span> Vous vous posez une question ?</p>
+                        <p class="uppercase text-white"><span class="mr-2">➜</span>Besoin d'un devis ?</p>
+                        <p class="uppercase text-white"><span class="mr-2">➜</span>Besoin d'explication ?</p>
                     </div>
-
-                    <div>
-                        <label for="email" class="mt-2 block font-[Urbanist] text-gray-700 text-lg font-semibold mb-2 mr-7 max-[850px]:text-base">Votre email :</label>
-                        <input type="email" id="email" name="email" placeholder="gerard.lime@mail.com" required
-                            class="w-full mt-3 border-b border-gray-400 appearance-none py-2 px-3 text-gray-900 font-light leading-tight focus:outline-none focus:shadow-outline max-[850px]:w-80 max-[850px]:mt-0">
-                    </div>
-
-                    <div>
-                        <label for="message" class="mt-2 block font-[Urbanist] text-gray-700 text-lg font-semibold mb-2 mr-2 max-[850px]:text-base">Votre message :</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Racontez-moi" required
-                            class="w-full mt-3 border-b border-gray-400 appearance-none py-2 px-3 text-gray-800 font-light leading-tight focus:outline-none focus:shadow-outline h-20 max-[850px]:w-80 max-[850px]:mt-0"></textarea>
-                    </div>
-
-                    <div class="flex items-center justify-end mt-10 space-x-4 max-[850px]:mt-0"> 
-                        <button type="submit"
-                            class="font-[Urbanist] border-1 border-teal-700 tracking-tighter text-lg bg-teal-700 text-white hover:bg-white hover:text-black font-semibold py-2 px-8 rounded focus:outline-none focus:shadow-outline cursor-pointer max-[500px]:text-base">
-                            Envoyer
-                        </button>
-                    </div>
-                </form>
+                </div>
             </div>
         </section>
+        
+        <section class="relative -mt-60 flex justify-center gap-20 z-11">
+            <div class=" w-320 h-180 flex border-1 border-gray-200 bg-gray-200 rounded-xl shadow-2xl">
 
+                <div class="bg-gray-300 w-150 rounded-l-xl">
+  
+                </div> 
 
+                <div class="mt-15 ml-25">
+                    <div>
+                        <h3 class="uppercase text-3xl font-bold">Envoyez moi un <span class="text-teal-500">message</span></h3>
+                    </div>
+                    <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col mt-5 rounded-lg w-120 space-y-4 p-6 border-gray-400 max-[850px]:w-80 max-[850px]:mt-5 max-[850px]:p-0 max-[850px]:items-center max-[1215px]:w-80 max-[1215px]:mt-1" >
+                        <input type="hidden" name="apikey" value="7e1a5f8b-2460-40f6-af08-452d100b04a5">
+                        <input type="hidden" name="redirect" value="https://www.palweb.be/remerciement.html">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                        <div class>
+                            <label for="nom" class="text-gray-700 text-lg font-semibold mb-2 mr-8 max-[850px]:text-base">Votre nom :</label>
+                            <input type="text" id="nom" name="nom" placeholder="Gérard Lime" required 
+                                class="w-full mt-3 appearance-none border-b border-gray-400 py-2 px-3 font-light leading-tight focus:outline-none focus:shadow-outline max-[850px]:w-80 max-[850px]:mt-2">
+                        </div>
+
+                        <div>
+                            <label for="email" class="mt-2 block text-gray-700 text-lg font-semibold mb-2 mr-7 max-[850px]:text-base">Votre email :</label>
+                            <input type="email" id="email" name="email" placeholder="gerard.lime@mail.com" required
+                                class="w-full mt-3 border-b border-gray-400 appearance-none py-2 px-3 text-gray-900 font-light leading-tight focus:outline-none focus:shadow-outline max-[850px]:w-80 max-[850px]:mt-0">
+                        </div>
+
+                        <div>
+                            <label for="email" class="mt-2 block text-gray-700 text-lg font-semibold mb-2 mr-7 max-[850px]:text-base">La raison :</label>
+                            <select name="votreDemande" id="votreDemande">
+                                <option value="Devis">Devis</option>
+                                <option value="Question">Question</option>
+                                <option value="Réalisation">Réalisation</option>
+                                <option value="Mise à jour">Mise à jour</option>
+                                <option value="Autres">Autres</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="message" class="mt-2 block text-gray-700 text-lg font-semibold mb-2 mr-2 max-[850px]:text-base">Votre message :</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Racontez-moi" required
+                                class="w-full mt-3 border-b border-gray-400 appearance-none py-2 px-3 text-gray-800 font-light leading-tight focus:outline-none focus:shadow-outline h-20 max-[850px]:w-80 max-[850px]:mt-0"></textarea>
+                        </div>
+
+                        <div class="flex items-center justify-end mt-10 space-x-4 max-[850px]:mt-0"> 
+                            <button type="submit"
+                                class="border-1 border-teal-700 tracking-tighter text-lg bg-teal-700 text-white hover:bg-white hover:text-black font-semibold py-2 px-8 rounded focus:outline-none focus:shadow-outline cursor-pointer max-[500px]:text-base">
+                                Envoyer
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
-    <script src="./script.js"></script>
+
+    <!-- FOOTER -->
+
+    <footer class="mt-50">
+        <section class="bg-teal-600 w-full h-80">
+            <div class="flex justify-center w-full border-1">
+                <div class="flex justify-center items-center">
+                    <img src="./ressources/palweb.png" alt="" class="w-50">
+                </div>
+                <div class="flex flex-col justify-center h-80 ">
+                    <h3 class="uppercase font-semibold text-white border-b-2 pb-1 mb-5">Mes coordonnées :</h3>
+                    <p class="text-white">Parc des trois frontières 111, 4851 Gemmenich</p>
+                    <p class="text-white">4851 Gemmenich</p>
+                </div>
+
+                <div class="h-80 ">
+                    
+                </div>
+
+                <div class="h-80 ">
+                    
+                </div>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>

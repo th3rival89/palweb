@@ -9,3 +9,7 @@
         @apply flex justify-center items-center;
     }
 }
+
+/* html {
+  scroll-behavior: smooth;
+} */
