@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="./styles/output.css">
 </head>
 <body class="bg-teal-50">
-
+    
     <!-- MENU -->
 
     <nav id="section-accueil">
-        <div class="center-flex w-full h-25 bg-gradient-to-r from-teal-400 to-teal-600 relative z-5">
-            <div class="absolute">
+        <div class="center-flex w-full h-25 bg-teal-600 relative z-5">
+            <!-- <div class="absolute">
                 <div class="flex justify-center mb-10 w-full">
                     <div class="flex w-110 pl-10">
                         <span class="text-white font-bold pr-6 uppercase">Follow Us:</span>
@@ -28,10 +28,10 @@
                         </div>
                     </a>
                 </div>
-            </div>
-            <div class="flex justify-between pr-5 bg-slate-100 w-250 h-26 rounded-lg relative mt-30 shadow-xl z-40">
-                <div>
-                    <img src="./ressources/palweb.png" alt="" class="ml-5 w-30 rounded-l-lg">
+            </div> -->
+            <div class="flex justify-between pr-5 bg-slate-100 w-250 h-22 rounded-lg relative mt-20 shadow-xl z-40">
+                <div class="flex justify-center items-center">
+                    <img src="./ressources/palweb.png" alt="" class="ml-5 w-22 rounded-l-lg">
                 </div>
                 <div class="flex">
                     <div class="flex gap-10 items-center font-semibold pr-10">
@@ -40,10 +40,10 @@
                         <a href="#section-realisation" class="uppercase hover:text-teal-500">Réalisation</a>
                         <a href="#section-contact" class="uppercase hover:text-teal-500">Contact</a>
                     </div>
-                    <div class="py-8 pr-8">
+                    <!-- <div class="py-8 pr-8">
                         <a href="#"><img src="./ressources/loupe.svg" alt="" class="size-8"></a>
-                    </div>
-                    <div class="py-7 ">
+                    </div> -->
+                    <div class="py-6 ">
                         <a href="#section-contact" class="flex bg-teal-600 px-8 text-white font-semibold py-2 rounded-md text-lg transition-transform duration-300 transform hover:translate-x-2">Une offre ⭢</a>
                     </div>
                 </div>
@@ -75,7 +75,7 @@
                     <div class="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent"></div>
                 </div>
 
-                <div class="-mt-130 ml-20">
+                <div class="-mt-50 ml-20">
                     <a href="#section-accueil"><img src="./ressources/arrow-up.svg" alt="" class="fixed border-2 size-12 rounded-full bg-black border-white z-99 hover:-translate-y-3 transition-transform duration-350"></a>                             
                 </div> 
 
@@ -268,11 +268,11 @@
 
         <!-- CONTACT -->
 
-        <section id="section-contact" class="relative mt-30 h-150 ">
+        <section id="section-contact" class="relative mt-30 h-250 ">
 
-            <div class="absolute inset-0 bg-[url(../ressources/hero-contact.jpg)] w-full h-150 bg-cover bg-center z-1"></div>
+            <div class="absolute inset-0 bg-[url(../ressources/hero-contact.jpg)] w-full h-250 bg-cover bg-center z-1"></div>
             <div class="absolute inset-0 bg-gradient-to-r from-[rgb(3_3_3_/_0.9)] to-[rgba(56,56,61,0.8)] z-10">
-                <div class="flex justify-center items-center h-full">
+                <!-- <div class="flex justify-center items-center h-full">
                     <div class="-mt-60">
                         <p class="text-teal-500 text-xl uppercase font-semibold">une question ?</p>
                         <h2 class="mt-10 text-5xl text-white font-bold uppercase">Contactez-moi</h2>
@@ -280,89 +280,113 @@
                         <p class="uppercase text-white"><span class="mr-2">➜</span>Besoin d'un devis ?</p>
                         <p class="uppercase text-white"><span class="mr-2">➜</span>Besoin d'explication ?</p>
                     </div>
-                </div>
+                </div> -->
+                <div class="flex justify-center mt-35">
+                <section class="flex justify-center gap-20 z-11">
+                    <div class=" w-320 h-180 flex border-1 border-gray-200 bg-gray-200 rounded-xl shadow-2xl">
+
+                        <div class="bg-gray-300 w-150 rounded-l-xl">
+        
+                        </div> 
+
+                        <div class="mt-15 ml-25">
+                            <div>
+                                <h3 class="uppercase text-3xl font-bold">Envoyez moi un <span class="text-teal-500">message</span></h3>
+                            </div>
+                            <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col mt-5 rounded-lg w-120 space-y-4 pt-6 border-gray-400 max-[850px]:w-80 max-[850px]:mt-5 max-[850px]:p-0 max-[850px]:items-center max-[1215px]:w-80 max-[1215px]:mt-1" >
+                                <input type="hidden" name="apikey" value="7e1a5f8b-2460-40f6-af08-452d100b04a5">
+                                <input type="hidden" name="redirect" value="https://www.palweb.be/remerciement.html">
+                                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                                <div class>
+                                    <label for="nom" class="text-gray-700 text-lg font-semibold mb-2 mr-8 max-[850px]:text-base">Votre nom :</label>
+                                    <input type="text" id="nom" name="nom" placeholder="Gérard Lime" required 
+                                        class="w-full mt-3 appearance-none border-b border-gray-400 py-2 px-3 font-light leading-tight focus:outline-none focus:shadow-outline max-[850px]:w-80 max-[850px]:mt-2">
+                                </div>
+
+                                <div>
+                                    <label for="email" class="mt-2 block text-gray-700 text-lg font-semibold mb-2 mr-7 max-[850px]:text-base">Votre email :</label>
+                                    <input type="email" id="email" name="email" placeholder="gerard.lime@mail.com" required
+                                        class="w-full mt-3 border-b border-gray-400 appearance-none py-2 px-3 text-gray-900 font-light leading-tight focus:outline-none focus:shadow-outline max-[850px]:w-80 max-[850px]:mt-0">
+                                </div>
+
+                                <div>
+                                    <label for="email" class="mt-2 block text-gray-700 text-lg font-semibold mb-2 mr-7 max-[850px]:text-base">La raison :</label>
+                                    <select name="votreDemande" id="votreDemande">
+                                        <option value="Devis">Devis</option>
+                                        <option value="Question">Question</option>
+                                        <option value="Réalisation">Réalisation</option>
+                                        <option value="Mise à jour">Mise à jour</option>
+                                        <option value="Autres">Autres</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label for="message" class="mt-2 block text-gray-700 text-lg font-semibold mb-2 mr-2 max-[850px]:text-base">Votre message :</label>
+                                    <textarea id="message" name="message" rows="5" placeholder="Racontez-moi" required
+                                        class="w-full mt-3 border-b border-gray-400 appearance-none py-2 px-3 text-gray-800 font-light leading-tight focus:outline-none focus:shadow-outline h-20 max-[850px]:w-80 max-[850px]:mt-0"></textarea>
+                                </div>
+
+                                <div class="flex items-center justify-end mt-10 space-x-4 max-[850px]:mt-0"> 
+                                    <button type="submit"
+                                        class="border-1 border-teal-700 tracking-tighter text-lg bg-teal-700 text-white hover:bg-white hover:text-black font-semibold py-2 px-8 rounded focus:outline-none focus:shadow-outline cursor-pointer max-[500px]:text-base">
+                                        Envoyer
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section> 
+                </div>               
             </div>
         </section>
         
-        <section class="relative -mt-60 flex justify-center gap-20 z-11">
-            <div class=" w-320 h-180 flex border-1 border-gray-200 bg-gray-200 rounded-xl shadow-2xl">
 
-                <div class="bg-gray-300 w-150 rounded-l-xl">
-  
-                </div> 
-
-                <div class="mt-15 ml-25">
-                    <div>
-                        <h3 class="uppercase text-3xl font-bold">Envoyez moi un <span class="text-teal-500">message</span></h3>
-                    </div>
-                    <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col mt-5 rounded-lg w-120 space-y-4 p-6 border-gray-400 max-[850px]:w-80 max-[850px]:mt-5 max-[850px]:p-0 max-[850px]:items-center max-[1215px]:w-80 max-[1215px]:mt-1" >
-                        <input type="hidden" name="apikey" value="7e1a5f8b-2460-40f6-af08-452d100b04a5">
-                        <input type="hidden" name="redirect" value="https://www.palweb.be/remerciement.html">
-                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-
-                        <div class>
-                            <label for="nom" class="text-gray-700 text-lg font-semibold mb-2 mr-8 max-[850px]:text-base">Votre nom :</label>
-                            <input type="text" id="nom" name="nom" placeholder="Gérard Lime" required 
-                                class="w-full mt-3 appearance-none border-b border-gray-400 py-2 px-3 font-light leading-tight focus:outline-none focus:shadow-outline max-[850px]:w-80 max-[850px]:mt-2">
-                        </div>
-
-                        <div>
-                            <label for="email" class="mt-2 block text-gray-700 text-lg font-semibold mb-2 mr-7 max-[850px]:text-base">Votre email :</label>
-                            <input type="email" id="email" name="email" placeholder="gerard.lime@mail.com" required
-                                class="w-full mt-3 border-b border-gray-400 appearance-none py-2 px-3 text-gray-900 font-light leading-tight focus:outline-none focus:shadow-outline max-[850px]:w-80 max-[850px]:mt-0">
-                        </div>
-
-                        <div>
-                            <label for="email" class="mt-2 block text-gray-700 text-lg font-semibold mb-2 mr-7 max-[850px]:text-base">La raison :</label>
-                            <select name="votreDemande" id="votreDemande">
-                                <option value="Devis">Devis</option>
-                                <option value="Question">Question</option>
-                                <option value="Réalisation">Réalisation</option>
-                                <option value="Mise à jour">Mise à jour</option>
-                                <option value="Autres">Autres</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <label for="message" class="mt-2 block text-gray-700 text-lg font-semibold mb-2 mr-2 max-[850px]:text-base">Votre message :</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Racontez-moi" required
-                                class="w-full mt-3 border-b border-gray-400 appearance-none py-2 px-3 text-gray-800 font-light leading-tight focus:outline-none focus:shadow-outline h-20 max-[850px]:w-80 max-[850px]:mt-0"></textarea>
-                        </div>
-
-                        <div class="flex items-center justify-end mt-10 space-x-4 max-[850px]:mt-0"> 
-                            <button type="submit"
-                                class="border-1 border-teal-700 tracking-tighter text-lg bg-teal-700 text-white hover:bg-white hover:text-black font-semibold py-2 px-8 rounded focus:outline-none focus:shadow-outline cursor-pointer max-[500px]:text-base">
-                                Envoyer
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
     </main>
 
     <!-- FOOTER -->
 
-    <footer class="mt-50">
-        <section class="bg-teal-600 w-full h-80">
-            <div class="flex justify-center w-full border-1">
+    <footer>
+        <section class="bg-teal-600 w-full h-100 ">
+            <div class="flex justify-center w-full">
                 <div class="flex justify-center items-center">
-                    <img src="./ressources/palweb.png" alt="" class="w-50">
-                </div>
-                <div class="flex flex-col justify-center h-80 ">
-                    <h3 class="uppercase font-semibold text-white border-b-2 pb-1 mb-5">Mes coordonnées :</h3>
-                    <p class="text-white">Parc des trois frontières 111, 4851 Gemmenich</p>
-                    <p class="text-white">4851 Gemmenich</p>
+                    <img src="./ressources/palweb.png" alt="" class="w-40 pt-2 pb-2 rounded-full bg-white">
                 </div>
 
-                <div class="h-80 ">
-                    
+                <div class="-mt-6 flex flex-col justify-center h-80 ml-30">
+                    <h3 class="uppercase font-semibold text-white">Mes coordonnées</h3>
+                    <div class="w-20 border-b-2 border-white pt-1 mb-5"></div>
+                    <p class="text-white mb-2">Parc des trois frontières 111,<br> 4851 Gemmenich</p>
+                    <p class="text-white mb-2">info@palweb.be</p>
+                    <p class="text-white">0473/235685</p>
                 </div>
 
-                <div class="h-80 ">
-                    
+                <div class="flex flex-col justify-center h-80 ml-30">
+                    <h3 class="uppercase font-semibold text-white">Plan du site</h3>
+                    <div class="w-20 border-b-2 border-white pt-1 mb-5"></div>
+                    <a href="section-accueil"><p class="text-white mb-2">Acceuil</p></a>
+                    <a href="section-services"><p class="text-white mb-2">Services</p></a>
+                    <a href="section-realisation"><p class="text-white mb-2">Réalisation</p></a>
+                    <a href="section-contact"><p class="text-white mb-2">Contact</p></a>
+                    <a href="section-accueil"><p class="text-white mb-2">Politique de confidentialité</p></a>
+                </div>              
+
+                <div class="-mt-15 flex flex-col justify-center h-80 ml-20">
+                    <h3 class="uppercase font-semibold text-white">Suivez-moi</h3>
+                    <div class="w-20 border-b-2 border-white pt-1 mb-5"></div>
+                     <div class="flex gap-5">
+                        <p class="mb-2 size-8"><img src="./ressources/facebook.svg" alt=""></p>
+                        <p class="mb-2 size-8"><img src="./ressources/instagram.svg" alt=""></p>
+                        <p class="mb-2 size-8"><img src="./ressources/linkedin.svg" alt=""></p>
+                    </div>
                 </div>
             </div>
+
+            <div class="flex flex-col items-center">
+                <div class="w-320 border-b-1 border-white"></div>
+                <p class="pt-4 text-white font-semibold">© 2025 Created by <a href="https://www.palweb.be">PALWeb</a></p>
+            </div>
+
         </section>
     </footer>
 </body>
