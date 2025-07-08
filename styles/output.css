@@ -736,6 +736,9 @@
   .bg-\[url\(\.\.\/ressources\/hero-contact\.jpg\)\] {
     background-image: url(../ressources/hero-contact.jpg);
   }
+  .bg-\[url\(\.\.\/ressources\/hero\.jpg\)\] {
+    background-image: url(../ressources/hero.jpg);
+  }
   .bg-\[url\(\.\.\/ressources\/hero\.webp\)\] {
     background-image: url(../ressources/hero.webp);
   }
