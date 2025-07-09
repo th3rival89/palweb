@@ -37,12 +37,30 @@
                     </div>
                     <div class="flex flex-col justify-center items-center w-full h-full z-10">            
                         <div class="-mt-30">
-                            <h2 class="uppercase text-center text-teal-500 text-xl font-semibold">Un petit plus pour vous</h2>
-                            <h1 class="uppercase text-center text-white text-5xl font-bold w-190 mt-10">Création de site internet, pour votre <span class="text-teal-500">visibilité</span></h1>
-                            <p class="uppercase text-center text-white mt-10">Se rendre visible sur internet de nos jours est important</p>
-                            <p class="uppercase text-center text-white">Avec un bon référencement c'est encore mieux</p>
+                            <h2 class="uppercase text-center text-teal-500 text-xl font-semibold">Passez au niveau supérieur sur le web.</h2>
+                            <!-- <h1 class="uppercase text-center text-white text-5xl font-bold w-190 mt-10">
+                                <span class="typewriter-line-1">Création de site internet,</span>
+                                <span class="typewriter-line-2"> votre <span class="text-teal-500">visibilité</span></span>
+                            </h1> -->
+                            <h1 class="uppercase text-center text-white text-5xl font-bold mt-10 flex flex-col items-center leading-tight">
+                                <!-- Première ligne : utilise la classe 'typewriter-line-transient' -->
+                                <span
+                                    id="line1"
+                                    class="block typewriter-line-transient"
+                                    style="--typing-duration: 2s; --typing-steps: 22;"> Boostez votre business
+                                </span>
+
+                                <!-- Deuxième ligne : utilise la classe 'typewriter-line-final' -->
+                                <span
+                                    id="line2"
+                                    class="block typewriter-line-final"
+                                    style="--typing-duration: 1.5s; --typing-steps: 28; animation-delay: 2s;"> avec un site web <span class="text-teal-500">performant.</span>
+                                </span>
+                            </h1>                     
+                            <p class="uppercase text-center text-white mt-10">Attirez de nouveaux clients et transformez votre présence en ligne en opportunités concrètes.</p>
+                            <p class="uppercase text-center text-white">Je conçois des sites optimisés pour un impact maximal.</p>
                             <div class="flex justify-center mt-10 gap-4">
-                                <a href="#section-realisation" class=" bg-teal-600 px-8 py-2 rounded-md text-lg text-white font-semibold">Les projets</a>
+                                <a href="#section-realisation" class=" bg-teal-600 px-8 py-2 rounded-md text-lg text-white font-semibold">Mes projets</a>
                                 <a href="#section-contact" class="bg-white px-6 py-2 rounded-md text-lg font-semibold">Me contacter</a>
                             </div>
                         </div>                    
@@ -76,7 +94,7 @@
                     <div class="flex flex-col items-center mt-5">
                         <h4 class="text-2xl font-bold uppercase">Promo ComeUp</h4>
                         <h3 class="text-2xl font-semibold">Votre premier site Onepage à <span class="text-teal-500 font-bold">150€</span></h3>
-                        <p class="w-200 m-5 text-center font-semibold">Démarrez <span class="font-bold">votre présence en ligne rapidement et à petit prix</span> ! Cette offre exclusive via ComeUp est parfaite pour les entrepreneurs et petites entreprises qui recherchent une vitrine web professionnelle et responsive. C'est le moyen idéal de lancer votre projet tout en découvrant la qualité et le professionnalisme de mes services de développement web.</p>
+                        <p class="w-200 m-5 text-center font-semibold">Démarrez <span class="font-bold uppercase">votre présence en ligne rapidement et à petit prix</span> ! Cette offre exclusive via ComeUp est parfaite pour les entrepreneurs et petites entreprises qui recherchent une vitrine web professionnelle et responsive. C'est le moyen idéal de lancer votre projet tout en découvrant la qualité et le professionnalisme de mes services de développement web.</p>
                     </div>
                 </div>
             </a>
@@ -380,5 +398,7 @@
             <img src="./ressources/arrow-up.svg" alt="Retour en haut" class="border-2 size-12 rounded-full bg-black border-white hover:-translate-y-3 transition-transform duration-350">
         </a>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

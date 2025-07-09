@@ -17,3 +17,55 @@ html {
 .group:hover .arrow {
   transform: translateX(5px);
 }
+
+
+/* Keyframes pour l'effet machine à écrire */
+@keyframes typing {
+  from { width: 0; } /* On retire l'opacity ici car on la gérera autrement */
+  to { width: 100%; }
+}
+
+/* Keyframes pour le clignotement du curseur */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+
+/* Pour faire apparaître la ligne */
+@keyframes fadeInLine {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Classe pour les lignes de texte qui doivent taper et DISSOUDRE leur curseur */
+.typewriter-line-transient {
+  opacity: 0; /* Cachée par défaut */
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid white;
+  padding-right: 0.5rem;
+
+  animation:
+    typing var(--typing-duration) steps(var(--typing-steps), end) forwards,
+    blink-caret .75s step-end infinite,
+    fadeInLine 0.1s linear forwards; /* Apparaît juste avant le typing */
+}
+
+/* Classe pour la DERNIÈRE ligne de texte, où le curseur doit rester et clignoter */
+.typewriter-line-final {
+  opacity: 0; /* Cachée par défaut */
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid white;
+  padding-right: 0.5rem;
+
+  animation:
+    typing var(--typing-duration) steps(var(--typing-steps), end) forwards,
+    blink-caret .75s step-end infinite var(--typing-duration), /* Le curseur démarre après la saisie de cette ligne */
+    fadeInLine 0.1s linear forwards; /* Apparaît juste avant le typing */
+}
+
+/* Classe utilitaire pour masquer le curseur (sera ajoutée par JS) */
+.hide-cursor {
+  border-right-color: transparent !important;
+}
