@@ -75,3 +75,35 @@ html {
 .hide-cursor {
   border-right-color: transparent !important;
 }
+
+/* Keyframes pour l'animation d'entrée (FadeInMoveUp) */
+@keyframes fadeInMoveUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Commence 20px plus bas */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Arrive à sa position normale */
+  }
+}
+
+/* Classe de base pour les boîtes de service animées */
+/* Initialement invisible et sans animation */
+.service-box-hidden {
+  opacity: 0;
+  transform: translateY(20px); /* Garde la position de départ de l'animation */
+  transition: opacity 0s, transform 0s; /* Empêche toute transition non désirée avant l'animation */
+}
+
+/* Classe qui sera ajoutée par JavaScript pour déclencher l'animation */
+.service-box-revealed {
+  animation: fadeInMoveUp 0.6s ease-out forwards; /* Durée, fonction d'accélération, et 'forwards' */
+}
+
+/* Classes pour les délais en cascade */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+/* ... ajoute d'autres délais si nécessaire ... */
