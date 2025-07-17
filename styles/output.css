@@ -1607,6 +1607,11 @@
       padding-right: calc(var(--spacing) * 10);
     }
   }
+  .max-\[750px\]\:pr-12 {
+    @media (width < 750px) {
+      padding-right: calc(var(--spacing) * 12);
+    }
+  }
   .max-\[750px\]\:pl-5 {
     @media (width < 750px) {
       padding-left: calc(var(--spacing) * 5);
@@ -1615,6 +1620,11 @@
   .max-\[750px\]\:pl-10 {
     @media (width < 750px) {
       padding-left: calc(var(--spacing) * 10);
+    }
+  }
+  .max-\[750px\]\:pl-12 {
+    @media (width < 750px) {
+      padding-left: calc(var(--spacing) * 12);
     }
   }
   .max-\[750px\]\:text-2xl {
