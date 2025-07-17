@@ -1627,6 +1627,13 @@
       padding-right: calc(var(--spacing) * 12);
     }
   }
+  .max-\[750px\]\:max-\[750px\]\:pl-12 {
+    @media (width < 750px) {
+      @media (width < 750px) {
+        padding-left: calc(var(--spacing) * 12);
+      }
+    }
+  }
   .max-\[750px\]\:pl-2 {
     @media (width < 750px) {
       padding-left: calc(var(--spacing) * 2);
