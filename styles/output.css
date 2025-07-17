@@ -1781,6 +1781,11 @@
       line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
+  .max-\[700px\]\:h-300 {
+    @media (width < 700px) {
+      height: calc(var(--spacing) * 300);
+    }
+  }
   .max-\[600px\]\:w-100 {
     @media (width < 600px) {
       width: calc(var(--spacing) * 100);
