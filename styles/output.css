@@ -1572,6 +1572,11 @@
       width: calc(var(--spacing) * 80);
     }
   }
+  .max-\[750px\]\:w-90 {
+    @media (width < 750px) {
+      width: calc(var(--spacing) * 90);
+    }
+  }
   .max-\[750px\]\:w-100 {
     @media (width < 750px) {
       width: calc(var(--spacing) * 100);
