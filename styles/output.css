@@ -398,6 +398,9 @@
   .-ml-15 {
     margin-left: calc(var(--spacing) * -15);
   }
+  .ml-0 {
+    margin-left: calc(var(--spacing) * 0);
+  }
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
   }
@@ -1641,6 +1644,11 @@
       line-height: var(--tw-leading, var(--text-base--line-height));
     }
   }
+  .max-\[800px\]\:flex {
+    @media (width < 800px) {
+      display: flex;
+    }
+  }
   .max-\[800px\]\:w-150 {
     @media (width < 800px) {
       width: calc(var(--spacing) * 150);
@@ -1781,9 +1789,164 @@
       line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
+  .max-\[700px\]\:-mt-25 {
+    @media (width < 700px) {
+      margin-top: calc(var(--spacing) * -25);
+    }
+  }
+  .max-\[700px\]\:-mt-30 {
+    @media (width < 700px) {
+      margin-top: calc(var(--spacing) * -30);
+    }
+  }
+  .max-\[700px\]\:mt-1 {
+    @media (width < 700px) {
+      margin-top: calc(var(--spacing) * 1);
+    }
+  }
+  .max-\[700px\]\:mt-5 {
+    @media (width < 700px) {
+      margin-top: calc(var(--spacing) * 5);
+    }
+  }
+  .max-\[700px\]\:mt-10 {
+    @media (width < 700px) {
+      margin-top: calc(var(--spacing) * 10);
+    }
+  }
+  .max-\[700px\]\:mt-20 {
+    @media (width < 700px) {
+      margin-top: calc(var(--spacing) * 20);
+    }
+  }
+  .max-\[700px\]\:mr-10 {
+    @media (width < 700px) {
+      margin-right: calc(var(--spacing) * 10);
+    }
+  }
+  .max-\[700px\]\:mr-15 {
+    @media (width < 700px) {
+      margin-right: calc(var(--spacing) * 15);
+    }
+  }
+  .max-\[700px\]\:ml-0 {
+    @media (width < 700px) {
+      margin-left: calc(var(--spacing) * 0);
+    }
+  }
+  .max-\[700px\]\:ml-5 {
+    @media (width < 700px) {
+      margin-left: calc(var(--spacing) * 5);
+    }
+  }
+  .max-\[700px\]\:ml-10 {
+    @media (width < 700px) {
+      margin-left: calc(var(--spacing) * 10);
+    }
+  }
+  .max-\[700px\]\:ml-15 {
+    @media (width < 700px) {
+      margin-left: calc(var(--spacing) * 15);
+    }
+  }
+  .max-\[700px\]\:h-150 {
+    @media (width < 700px) {
+      height: calc(var(--spacing) * 150);
+    }
+  }
+  .max-\[700px\]\:h-180 {
+    @media (width < 700px) {
+      height: calc(var(--spacing) * 180);
+    }
+  }
+  .max-\[700px\]\:h-200 {
+    @media (width < 700px) {
+      height: calc(var(--spacing) * 200);
+    }
+  }
+  .max-\[700px\]\:h-210 {
+    @media (width < 700px) {
+      height: calc(var(--spacing) * 210);
+    }
+  }
+  .max-\[700px\]\:h-220 {
+    @media (width < 700px) {
+      height: calc(var(--spacing) * 220);
+    }
+  }
   .max-\[700px\]\:h-300 {
     @media (width < 700px) {
       height: calc(var(--spacing) * 300);
+    }
+  }
+  .max-\[700px\]\:w-full {
+    @media (width < 700px) {
+      width: 100%;
+    }
+  }
+  .max-\[700px\]\:flex-col {
+    @media (width < 700px) {
+      flex-direction: column;
+    }
+  }
+  .max-\[700px\]\:items-center {
+    @media (width < 700px) {
+      align-items: center;
+    }
+  }
+  .max-\[700px\]\:justify-between {
+    @media (width < 700px) {
+      justify-content: space-between;
+    }
+  }
+  .max-\[700px\]\:justify-end {
+    @media (width < 700px) {
+      justify-content: flex-end;
+    }
+  }
+  .max-\[700px\]\:justify-start {
+    @media (width < 700px) {
+      justify-content: flex-start;
+    }
+  }
+  .max-\[700px\]\:object-right {
+    @media (width < 700px) {
+      object-position: right;
+    }
+  }
+  .max-\[700px\]\:pr-10 {
+    @media (width < 700px) {
+      padding-right: calc(var(--spacing) * 10);
+    }
+  }
+  .max-\[700px\]\:pr-15 {
+    @media (width < 700px) {
+      padding-right: calc(var(--spacing) * 15);
+    }
+  }
+  .max-\[700px\]\:pl-10 {
+    @media (width < 700px) {
+      padding-left: calc(var(--spacing) * 10);
+    }
+  }
+  .max-\[700px\]\:pl-15 {
+    @media (width < 700px) {
+      padding-left: calc(var(--spacing) * 15);
+    }
+  }
+  .max-\[700px\]\:text-center {
+    @media (width < 700px) {
+      text-align: center;
+    }
+  }
+  .max-\[700px\]\:text-left {
+    @media (width < 700px) {
+      text-align: left;
+    }
+  }
+  .max-\[700px\]\:text-right {
+    @media (width < 700px) {
+      text-align: right;
     }
   }
   .max-\[600px\]\:w-100 {
