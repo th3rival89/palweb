@@ -790,11 +790,24 @@
     --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
     --tw-gradient-stops: var(--tw-gradient-via-stops);
   }
+  .via-black\/1 {
+    --tw-gradient-via: color-mix(in srgb, #000 1%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-via: color-mix(in oklab, var(--color-black) 1%, transparent);
+    }
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+  }
   .via-black\/60 {
     --tw-gradient-via: color-mix(in srgb, #000 60%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       --tw-gradient-via: color-mix(in oklab, var(--color-black) 60%, transparent);
     }
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+  }
+  .via-black\/100 {
+    --tw-gradient-via: var(--color-black);
     --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
     --tw-gradient-stops: var(--tw-gradient-via-stops);
   }
@@ -1603,6 +1616,11 @@
       height: calc(var(--spacing) * 275);
     }
   }
+  .max-\[1025px\]\:h-295 {
+    @media (width < 1025px) {
+      height: calc(var(--spacing) * 295);
+    }
+  }
   .max-\[1025px\]\:h-300 {
     @media (width < 1025px) {
       height: calc(var(--spacing) * 300);
@@ -1804,6 +1822,11 @@
       margin-top: calc(var(--spacing) * 1);
     }
   }
+  .max-\[700px\]\:mt-2 {
+    @media (width < 700px) {
+      margin-top: calc(var(--spacing) * 2);
+    }
+  }
   .max-\[700px\]\:mt-5 {
     @media (width < 700px) {
       margin-top: calc(var(--spacing) * 5);
@@ -1829,6 +1852,11 @@
       margin-right: calc(var(--spacing) * 15);
     }
   }
+  .max-\[700px\]\:mb-0 {
+    @media (width < 700px) {
+      margin-bottom: calc(var(--spacing) * 0);
+    }
+  }
   .max-\[700px\]\:ml-0 {
     @media (width < 700px) {
       margin-left: calc(var(--spacing) * 0);
@@ -1847,6 +1875,26 @@
   .max-\[700px\]\:ml-15 {
     @media (width < 700px) {
       margin-left: calc(var(--spacing) * 15);
+    }
+  }
+  .max-\[700px\]\:hidden {
+    @media (width < 700px) {
+      display: none;
+    }
+  }
+  .max-\[700px\]\:h-32 {
+    @media (width < 700px) {
+      height: calc(var(--spacing) * 32);
+    }
+  }
+  .max-\[700px\]\:h-60 {
+    @media (width < 700px) {
+      height: calc(var(--spacing) * 60);
+    }
+  }
+  .max-\[700px\]\:h-80 {
+    @media (width < 700px) {
+      height: calc(var(--spacing) * 80);
     }
   }
   .max-\[700px\]\:h-150 {
@@ -1879,6 +1927,21 @@
       height: calc(var(--spacing) * 300);
     }
   }
+  .max-\[700px\]\:h-320 {
+    @media (width < 700px) {
+      height: calc(var(--spacing) * 320);
+    }
+  }
+  .max-\[700px\]\:h-350 {
+    @media (width < 700px) {
+      height: calc(var(--spacing) * 350);
+    }
+  }
+  .max-\[700px\]\:h-400 {
+    @media (width < 700px) {
+      height: calc(var(--spacing) * 400);
+    }
+  }
   .max-\[700px\]\:w-full {
     @media (width < 700px) {
       width: 100%;
@@ -1909,14 +1972,30 @@
       justify-content: flex-start;
     }
   }
+  .max-\[700px\]\:to-black {
+    @media (width < 700px) {
+      --tw-gradient-to: var(--color-black);
+      --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+    }
+  }
   .max-\[700px\]\:object-right {
     @media (width < 700px) {
       object-position: right;
     }
   }
+  .max-\[700px\]\:pt-1 {
+    @media (width < 700px) {
+      padding-top: calc(var(--spacing) * 1);
+    }
+  }
   .max-\[700px\]\:pr-10 {
     @media (width < 700px) {
       padding-right: calc(var(--spacing) * 10);
+    }
+  }
+  .max-\[700px\]\:pr-13 {
+    @media (width < 700px) {
+      padding-right: calc(var(--spacing) * 13);
     }
   }
   .max-\[700px\]\:pr-15 {
