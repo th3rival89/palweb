@@ -839,6 +839,9 @@
   .bg-\[url\(\.\.\/ressources\/hero\.jpg\)\] {
     background-image: url(../ressources/hero.jpg);
   }
+  .bg-\[url\(\.\.\/ressources\/hero\.webp\)\] {
+    background-image: url(../ressources/hero.webp);
+  }
   .from-\[rgb\(3_3_3_\/_0\.9\)\] {
     --tw-gradient-from: rgb(3 3 3 / 0.9);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
